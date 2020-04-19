@@ -1,11 +1,13 @@
 package com.example.myrecyclerview;
 
 public class Categories {
-    private Integer id;
+    private int id;
     private String title;
     private String lienCategories;
+    private String description;
+    private String couches;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
@@ -24,7 +26,4 @@ public class Categories {
     public String getCouches() {
         return couches;
     }
-
-    private String description;
-    private String couches;
 }

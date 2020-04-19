@@ -6,37 +6,47 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_alignParentBottom="true"
+        android:layout_width="92dp"
+        android:layout_height="58dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginRight="6dip"
+        android:layout_marginBottom="0dp"
         android:contentDescription="TODO"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@drawable/pic1" />
 
     <TextView
         android:id="@+id/secondLine"
         android:layout_width="fill_parent"
         android:layout_height="26dip"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="-10dp"
         android:layout_toRightOf="@id/icon"
         android:ellipsize="marquee"
+        android:singleLine="true"
         android:text="Description"
-        android:textSize="12sp"
-        android:singleLine="true" />
+        android:textColor="#251818"
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/firstLine"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/secondLine"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
         android:layout_alignWithParentIfMissing="true"
+        android:layout_above="@id/secondLine"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="-1dp"
         android:layout_toRightOf="@id/icon"
         android:gravity="center_vertical"
         android:text="Example application"
+        android:textColor="#EAE4E4"
         android:textSize="16sp" />
 
 </RelativeLayout>

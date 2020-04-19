@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">MyRecyclerView</string>
+    <string name="app_name">Categories</string>
+    <string name="app_name_second">Description</string>
+    <string name="first_layout_button_txt">Start</string>
+    <string name="first_layout_txt">Welcome to Geogr\'App, the app which learn you the natural catastrophes</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>

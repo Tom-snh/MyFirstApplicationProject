@@ -1,10 +1,9 @@
 package com.example.myrecyclerview.presentation.controller;
 
 import android.content.SharedPreferences;
-import android.widget.Toast;
 
 import com.example.myrecyclerview.Constant;
-import com.example.myrecyclerview.data.CategoriesAPI;
+import com.example.myrecyclerview.Singletons;
 import com.example.myrecyclerview.presentation.model.Categories;
 import com.example.myrecyclerview.presentation.model.RestCategorieResponse;
 import com.example.myrecyclerview.presentation.view.MainActivity;
@@ -17,10 +16,6 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-
-import static android.content.Context.MODE_PRIVATE;
 
 public class MainController {
     private SharedPreferences sharedPreferences;
@@ -55,14 +50,7 @@ public class MainController {
     }
     //API
     private void start(){
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(Constant.BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create(gson))
-                .build();
-
-        CategoriesAPI categoriesApi = retrofit.create(CategoriesAPI.class);
-
-        Call<RestCategorieResponse> call = categoriesApi.getCategoriesResponse();
+        Call<RestCategorieResponse> call = Singletons.getCategoriesAPI().getCategoriesResponse();
         call.enqueue(new Callback<RestCategorieResponse>() {
             @Override
             public void onResponse(Call<RestCategorieResponse> call, Response<RestCategorieResponse> response) {

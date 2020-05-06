@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.myrecyclerview.R;
+import com.example.myrecyclerview.Singletons;
 import com.example.myrecyclerview.presentation.controller.MainController;
 import com.example.myrecyclerview.presentation.model.Categories;
 import com.google.gson.Gson;
@@ -37,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
         mainController = new MainController(
                 this,
-                getSharedPreferences("app_esiea",MODE_PRIVATE),
-                new Gson()
+                Singletons.getSharedPref(getApplicationContext()),
+                Singletons.getGson()
         );
         mainController.onStart();
     }

@@ -1,49 +1,57 @@
-package com.example.myrecyclerview;
+package com.example.myrecyclerview.presentation.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import com.example.myrecyclerview.R;
+
 
 public class InfoActivity extends AppCompatActivity {
-    private Context context;
 
     @Override
+    //Méthode lancée au début de l'activité
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Se réfère au layout activity_info
         setContentView(R.layout.activity_info);
 
-        Button button = (Button)findViewById(R.id.previous_button);
+        //On récupère l'id du bouton puis on éxécute une action s'il est cliqué
+        Button button = findViewById(R.id.previous_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(context,MainActivity.class);
-                //startActivity(intent);
                 InfoActivity.this.finish();
             }
         });
         getIncommingIntent();
     }
 
+
     private void getIncommingIntent(){
+        //On vérifie que l'intent a bien récupéré les données
         if(getIntent().hasExtra("desc_1") && getIntent().hasExtra("image_1")){
+            //Si oui, on les stock dans une variable..
             String description = getIntent().getStringExtra("desc_1");
             int image = getIntent().getIntExtra("image_1",0);
+
+            //...puis on l'affiche dans l'activité courante
             setImage(image,description);
         }
+
     }
 
     private void setImage(int image_name,String desc){
+        //On récupère l'id du textView...
         TextView description = findViewById(R.id.textInfo);
+        //...et prend la valeur de la donnée desc
         description.setText(desc);
 
+        //de meme pour l'image (int)
         ImageView imageView = findViewById(R.id.imageInfo);
         imageView.setImageResource(image_name);
     }

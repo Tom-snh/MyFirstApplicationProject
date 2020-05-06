@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#251818"
-    tools:context=".InfoActivity">
+    android:background="@color/background"
+    tools:context=".presentation.view.InfoActivity">
 
     <ImageView
         android:id="@+id/imageInfo"
@@ -22,10 +23,9 @@
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginBottom="228dp"
-        android:autoText="false"
-        android:background="#251818"
+        android:background="@color/background"
         android:text="TextView"
-        android:textColor="#EFE2E2"
+        android:textColor="#302A2A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -36,7 +36,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="27dp"
-        android:text="Previous"
+        android:text="@string/previous_button_txt"
+        android:textColor="@color/noir"
+        android:alpha="0.50"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

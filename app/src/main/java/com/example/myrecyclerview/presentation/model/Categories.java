@@ -1,11 +1,17 @@
-package com.example.myrecyclerview;
+package com.example.myrecyclerview.presentation.model;
+
+//Cette classe donne le format d'une Catégorie
 
 public class Categories {
     private int id;
     private String title;
-    private String lienCategories;
     private String description;
-    private String couches;
+
+    public Categories(int id, String title, String description) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+    }
 
     public int getId() {
         return id;
@@ -15,15 +21,7 @@ public class Categories {
         return title;
     }
 
-    public String getLienCategories() {
-        return lienCategories;
-    }
-
     public String getDescription() {
         return description;
-    }
-
-    public String getCouches() {
-        return couches;
     }
 }

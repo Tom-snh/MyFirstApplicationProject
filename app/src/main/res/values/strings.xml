@@ -2,10 +2,17 @@
     <string name="app_name">Categories</string>
     <string name="app_name_second">Description</string>
     <string name="first_layout_button_txt">Start</string>
-    <string name="first_layout_txt">Welcome to Geogr\'App, the app which learn you the natural catastrophes</string>
+    <string name="first_layout_txt">Welcome to Geogr\'App, the application that explains natural phenomena</string>
     <string name="title_item_list">Items</string>
     <string name="title_item_detail">Item Detail</string>
     <string name="title_activity_info">InfoActivity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="first_info_txt">Geogr\'App</string>
+    <string name="previous_button_txt">Back</string>
+    <string name="menu_txt">Wanna play ?</string>
+    <string name="settings_txt">Settings</string>
+    <string name="game_txt">Please choose a number between 1 and 100  </string>
+    <string name="game_button_txt">ok</string>
+    <string name="game_label">Let\'s play</string>
 </resources>

@@ -22,5 +22,6 @@ En bonus, un petit jeu basique est caché dans cette application. Cherchez bien,
 Geogr'App est toujours en cours de développement pour apporter de nouvelles fonctionalités.
 
 ## Auteur
-Pour mon projet de 3e année, je suis fier de vous présenter ma première application mobile, aussi simple soit-elle.
+Pour mon projet de 3e année, je suis fier de vous présenter ma première application mobile, aussi simple qu'elle puisse être.
+
 Enjoy !

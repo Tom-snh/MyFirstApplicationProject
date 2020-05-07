@@ -34,15 +34,14 @@ public class InfoActivity extends AppCompatActivity {
 
     private void getIncommingIntent(){
         //On vérifie que l'intent a bien récupéré les données
-        if(getIntent().hasExtra("desc_1") && getIntent().hasExtra("image_1")){
+        if(getIntent().hasExtra("description") && getIntent().hasExtra("image")){
             //Si oui, on les stock dans une variable..
-            String description = getIntent().getStringExtra("desc_1");
-            int image = getIntent().getIntExtra("image_1",0);
+            String description = getIntent().getStringExtra("description");
+            int image = getIntent().getIntExtra("image",0);
 
             //...puis on l'affiche dans l'activité courante
             setImage(image,description);
         }
-
     }
 
     private void setImage(int image_name,String desc){

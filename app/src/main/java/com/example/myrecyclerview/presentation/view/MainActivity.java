@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -17,7 +16,6 @@ import com.example.myrecyclerview.R;
 import com.example.myrecyclerview.Singletons;
 import com.example.myrecyclerview.presentation.controller.MainController;
 import com.example.myrecyclerview.presentation.model.Categories;
-import com.google.gson.Gson;
 
 import java.util.List;
 

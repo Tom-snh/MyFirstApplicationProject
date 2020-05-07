@@ -80,8 +80,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
                 //Toast.makeText(context,image_id,Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(context, InfoActivity.class);
                 //On récupère les données
-                intent.putExtra("desc_1",currentCategorie.getDescription());
-                intent.putExtra("image_1", image_id);
+                intent.putExtra("description",currentCategorie.getDescription());
+                intent.putExtra("image", image_id);
                 context.startActivity(intent);
             }
         });

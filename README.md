@@ -9,11 +9,11 @@ Cette application est uniquement disponible en anglais.
 
 Une liste de 13 événements vous est présentée comme ci-dessous :
 
-![Categories](https://github.com/Tom-snh/MyFirstApplicationProject/blob/master/app/src/main/res/drawable/captureCategories.jpg)
+![Categories](https://github.com/Tom-snh/MyFirstApplicationProject/blob/master/app/src/main/res/drawable/capture_categories.jpg)
 
 Sélectionnez un item pour en voir le détail : 
 
-![Description](https://github.com/Tom-snh/MyFirstApplicationProject/blob/master/app/src/main/res/drawable/captureDescription.jpg)
+![Description](https://github.com/Tom-snh/MyFirstApplicationProject/blob/master/app/src/main/res/drawable/capture_description.jpg)
 
 En bonus, un petit jeu basique est caché dans cette application. Cherchez bien, il n'est pas si impossible à trouver !
 

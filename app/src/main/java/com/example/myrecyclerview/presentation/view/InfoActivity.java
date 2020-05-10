@@ -21,8 +21,8 @@ public class InfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_info);
 
         //On récupère l'id du bouton puis on éxécute une action s'il est cliqué
-        Button button = findViewById(R.id.previous_button);
-        button.setOnClickListener(new View.OnClickListener() {
+        TextView previous = findViewById(R.id.previousText);
+        previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 InfoActivity.this.finish();

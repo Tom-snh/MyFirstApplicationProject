@@ -11,7 +11,7 @@ Une liste de 13 événements vous est présentée comme ci-dessous :
 
 ![Categories](https://github.com/Tom-snh/MyFirstApplicationProject/blob/master/app/src/main/res/drawable/capture_categories.jpg)
 
-Sélectionnez un item pour en voir le détail : 
+Séléctionnez un item pour en voir le détail : 
 
 ![Description](https://github.com/Tom-snh/MyFirstApplicationProject/blob/master/app/src/main/res/drawable/capture_description.jpg)
 
